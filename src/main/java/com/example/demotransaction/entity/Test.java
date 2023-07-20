@@ -27,14 +27,14 @@ public class Test {
   @Scheduled(fixedRate = 5000)
   @Transactional
   public void updateBook() {
-    Book book2 = new Book(1, "Hieu 1", "noi phet de thanh cong", 111);
+    Book book2 = new Book(1, "Hieu 1", "noi phet de thanh cong", 111,1);
     bookService.update(book2);
   }
 
   @Scheduled(fixedRate = 5000)
   @Transactional
   public void updateBook1() {
-    Book book2 = new Book(1, "Hieu 2", "noi phet de thanh cong", 222);
+    Book book2 = new Book(1, "Hieu 2", "noi phet de thanh cong", 222,1);
     bookService.update(book2);
   }
 

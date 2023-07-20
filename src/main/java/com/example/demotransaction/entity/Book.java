@@ -18,4 +18,14 @@ public class Book {
   private String author;
   private String title;
   private int price;
+
+  @Version
+  private Integer version;
+
+  public Book(Integer id, String author, String title, int price) {
+    this.id = id;
+    this.author = author;
+    this.title = title;
+    this.price = price;
+  }
 }
